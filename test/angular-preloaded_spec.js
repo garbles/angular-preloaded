@@ -14,10 +14,11 @@ describe('angular-preloaded', function () {
     $scope = $rootScope.$new();
     $compile('<script type="text/preloaded">{ "a": 1 }</script>')($rootScope);
     $compile('<script type="text/preloaded">{ "b": 2 }</script>')($rootScope);
+    $compile('<script type="text/preloaded" name="c">3</script>')($rootScope);
     $controller('FakeCtrl', { $scope: $scope });
   }));
 
   it('injects preloaded data to controllers', function () {
-    expect($scope.preloaded).toEqual({a: 1, b: 2});
+    expect($scope.preloaded).toEqual({a: 1, b: 2, c: 3});
   });
 });

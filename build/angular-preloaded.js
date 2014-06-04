@@ -10,8 +10,14 @@ angular.module('gs.preloaded', [])
       if (attrs.type !== 'text/preloaded') {
         return;
       }
+
       data = JSON.parse(el.text());
-      angular.extend($preloaded, data);
+
+      if (attrs.hasOwnProperty('name')) {
+        $preloaded[attrs.name] = data;
+      } else {
+        angular.extend($preloaded, data);
+      }
     }
   };
 }])
