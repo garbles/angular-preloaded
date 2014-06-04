@@ -25,7 +25,7 @@ with `type=text/preloaded`.
 </script>
 <script type="text/preloaded" name="another">
   {
-    "point: "of data"
+    "point": "of data"
   }
 </script>
 ```
