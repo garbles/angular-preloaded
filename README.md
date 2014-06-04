@@ -23,9 +23,9 @@ with `type=text/preloaded`.
     "data": "point"
   }
 </script>
-<script type="text/preloaded">
+<script type="text/preloaded" name="another">
   {
-    "another": 1
+    "point: "of data"
   }
 </script>
 ```
@@ -37,7 +37,7 @@ injecting `$preloaded`.
 angular.module('app', ['gs.preloaded'])
 .controller('SomeCtrl', function ($preloaded) {
   // do something with $preloaded.
-  $preloaded; // => { "data": "point", "another": 1 }
+  $preloaded; // => { "data": "point", "another": { "point: "of data" } }
 })
 .config(function ($preloaded) {
   // etc..
