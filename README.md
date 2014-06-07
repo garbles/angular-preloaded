@@ -40,9 +40,6 @@ angular.module('app', ['gs.preloaded'])
 .controller('SomeCtrl', function ($preloaded) {
   // do something with $preloaded.
   $preloaded; // => { "data": "point", "another": { "point: "of data" } }
-})
-.config(function ($preloaded) {
-  // etc..
 });
 ```
 

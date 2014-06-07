@@ -22,6 +22,6 @@ angular.module('gs.preloaded', [])
   };
 }])
 
-.constant('$preloaded', {});
+.value('$preloaded', {});
 
 })(window, window.angular);
