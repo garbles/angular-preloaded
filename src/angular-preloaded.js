@@ -13,7 +13,7 @@ angular.module('gs.preloaded', [])
 
       data = JSON.parse(el.text());
 
-      if (attrs.hasOwnProperty('name')) {
+      if (attrs.hasOwnProperty('name') || attrs.hasOwnProperty('data-name')) {
         $preloaded[attrs.name] = data;
       } else {
         angular.extend($preloaded, data);
