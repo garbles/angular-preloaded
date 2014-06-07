@@ -1,5 +1,7 @@
 # angular-preloaded
 
+[![Build Status](https://secure.travis-ci.org/garbles/angular-preloaded.png?branch=master)](https://travis-ci.org/garbles/angular-preloaded)
+
 This AngularJS plugin allows you to preload data for your application by
 putting it into a special script tag. This is especially great for non-SPAs
 that want to use AngularJS.
