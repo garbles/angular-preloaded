@@ -1,6 +1,6 @@
 {
   "name": "angular-preloaded",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Preload data for your non-SPA AngularJS application",
   "main": "./build/angular-preloaded.js",
   "minified": "./build/angular-preloaded.min.js",
