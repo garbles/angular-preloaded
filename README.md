@@ -39,7 +39,7 @@ injecting `$preloaded`.
 angular.module('app', ['gs.preloaded'])
 .controller('SomeCtrl', function ($preloaded) {
   // do something with $preloaded.
-  $preloaded; // => { "data": "point", "another": { "point: "of data" } }
+  $preloaded; // => { data: "point", another: { point: "of data" } }
 });
 ```
 
